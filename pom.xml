@@ -17,6 +17,12 @@
       <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter</artifactId>
+          <version>RELEASE</version>
+          <scope>test</scope>
+      </dependency>
   </dependencies>
 
   <properties>
@@ -34,8 +40,8 @@
         <version>${version.maven.compiler.plugin}</version>
         <inherited>true</inherited>
         <configuration>
-          <source>${version.java}</source>
-          <target>${version.java}</target>
+          <source>11</source>
+          <target>11</target>
           <compilerArgument>-Xlint:all</compilerArgument>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
